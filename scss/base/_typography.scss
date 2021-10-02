@@ -1,0 +1,28 @@
+.heading{
+    font-family: $heading-font;
+    font-weight: 700;
+    color: $Very-Dark-Cyan;
+
+
+    &-1{
+        font-size: 4rem;
+    }
+}
+
+.paragraph{
+    font-family: $body-font;
+    font-size: 1.7rem;
+    color: $Very-Dark-Cyan;
+
+    &-4{
+        font-weight: 400;
+    }
+
+    &-6{
+        font-weight: 600;
+    }
+
+    &-7{
+        font-weight: 700;
+    }
+}

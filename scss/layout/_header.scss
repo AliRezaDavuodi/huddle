@@ -1,0 +1,38 @@
+.header{
+
+    height: 95vh;
+    text-align: center;
+
+
+    &__top{
+        height: 10rem;
+        padding:6rem 10rem;
+        
+
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    &__logo--box{
+        margin-right: auto;
+        width: 20rem;
+    }
+
+    &__logo{
+        width: 100%;
+        object-fit: fill;
+    }
+
+
+    &__content{
+        height: 45rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}

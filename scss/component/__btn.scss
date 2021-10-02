@@ -1,0 +1,55 @@
+.btn__box {
+
+
+
+    .btn {
+
+        &:link,
+        &:visited {
+            border-radius: 10rem;
+            text-decoration: none;
+            transition: all .3s ease;
+            display: block;
+            font-size: 1.4rem;
+        }
+
+        &:hover {
+            transform: translateY(-.8rem);
+        }
+
+
+        &:active {
+            transform: translateY(-.2rem);
+        }
+
+        &__primary:hover {
+            background-color: $color-white;
+            color: $Pink;
+            box-shadow: 0 1rem 4rem rgba($Pink, .4);
+            border: 1px solid $Pink;
+        }
+
+        &__sec:hover {
+            background-color: $Pink;
+            color: $color-white;
+            box-shadow: 0 1rem 4rem rgba($Pink, .4);
+        }
+
+        &__primary {
+            background-color: $Pink;
+            color: $color-white;
+            padding: 1.4rem 7rem;
+            box-shadow: 0 1rem 4rem rgba($Very-Dark-Cyan, .2);
+            border: 1px solid $Pink;
+
+        }
+
+        &__sec {
+            background-color: transparent;
+            border: 1px solid $Pink;
+            color: $Pink;
+            padding: .5rem 1.3rem;
+            box-shadow: 0 1rem 4rem rgba($Pink, .2);
+        }
+    }
+}

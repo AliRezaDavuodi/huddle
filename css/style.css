@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00252e;
+}
+.heading-1 {
+  font-size: 4rem;
+}
+
+.paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
+  color: #00252e;
+}
+.paragraph-4 {
+  font-weight: 400;
+}
+.paragraph-6 {
+  font-weight: 600;
+}
+.paragraph-7 {
+  font-weight: 700;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.btn__box .btn:link, .btn__box .btn:visited {
+  border-radius: 10rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+  font-size: 1.4rem;
+}
+.btn__box .btn:hover {
+  transform: translateY(-0.8rem);
+}
+.btn__box .btn:active {
+  transform: translateY(-0.2rem);
+}
+.btn__box .btn__primary:hover {
+  background-color: #fff;
+  color: #ff52bf;
+  box-shadow: 0 1rem 4rem rgba(255, 82, 191, 0.4);
+  border: 1px solid #ff52bf;
+}
+.btn__box .btn__sec:hover {
+  background-color: #ff52bf;
+  color: #fff;
+  box-shadow: 0 1rem 4rem rgba(255, 82, 191, 0.4);
+}
+.btn__box .btn__primary {
+  background-color: #ff52bf;
+  color: #fff;
+  padding: 1.4rem 7rem;
+  box-shadow: 0 1rem 4rem rgba(0, 37, 46, 0.2);
+  border: 1px solid #ff52bf;
+}
+.btn__box .btn__sec {
+  background-color: transparent;
+  border: 1px solid #ff52bf;
+  color: #ff52bf;
+  padding: 0.5rem 1.3rem;
+  box-shadow: 0 1rem 4rem rgba(255, 82, 191, 0.2);
+}
+
+.header {
+  height: 95vh;
+  text-align: center;
+}
+.header__top {
+  height: 10rem;
+  padding: 6rem 10rem;
+  display: flex;
+  align-items: center;
+}
+.header__logo--box {
+  margin-right: auto;
+  width: 20rem;
+}
+.header__logo {
+  width: 100%;
+  object-fit: fill;
+}
+.header__content {
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
