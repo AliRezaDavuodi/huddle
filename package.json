@@ -1,0 +1,21 @@
+{
+  "name": "huddle",
+  "version": "1.0.0",
+  "description": "![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass":"node-sass -w scss/main.scss css/style.css",
+    "live":"live-server",
+    "start": "npm-run-all --parallel sass live",
+
+    "compile":"node-sass scss/main.scss css/style.comp.css",
+    "compress":"node-sass css/style.comp.css css/style.css --output-style compressed",
+    "build":"compile compress"
+  },
+  "author": "Alireza Davoudi",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
