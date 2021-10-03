@@ -66,11 +66,9 @@ body {
 .btn__box .btn:active {
   transform: translateY(-0.2rem);
 }
-.btn__box .btn__primary:hover {
-  background-color: #fff;
-  color: #ff52bf;
-  box-shadow: 0 1rem 4rem rgba(255, 82, 191, 0.4);
-  border: 1px solid #ff52bf;
+.btn__box .btn__primary:hover::after {
+  transform: scale(1.5);
+  opacity: 0;
 }
 .btn__box .btn__sec:hover {
   background-color: #ff52bf;
@@ -83,6 +81,19 @@ body {
   padding: 1.4rem 7rem;
   box-shadow: 0 1rem 4rem rgba(0, 37, 46, 0.2);
   border: 1px solid #ff52bf;
+  position: relative;
+}
+.btn__box .btn__primary::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff52bf;
+  border-radius: 10rem;
+  z-index: -1;
+  transition: all 0.3s;
 }
 .btn__box .btn__sec {
   background-color: transparent;
