@@ -13,6 +13,12 @@
     &-2{
         font-size: 6rem;
     }
+
+    &-4{
+        font-size: 1.8rem;
+        color: #fff;
+        text-align: start;
+    }
 }
 
 .paragraph{
@@ -20,6 +26,12 @@
     font-size: 1.7rem;
     color: $Very-Dark-Cyan;
     text-align: center;
+
+    &-light{
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: start;
+    }
 
 
     &-4{

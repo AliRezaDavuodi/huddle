@@ -1,0 +1,65 @@
+.footer{
+    @include flexbox(center);
+    color: $color-white;
+    background-color: $Very-Dark-Cyan;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    
+    &__bg{
+        transform: rotate(180deg);
+        position: absolute;
+        top: -1rem;
+        left: 0;
+    }
+
+    &__left{
+        @include flexbox(flex-start);
+        padding: 5rem 15rem;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+}
+
+    &__logo{
+
+        svg{
+            transform: scale(.7);
+            margin-left: -3.8rem;
+        }
+    }
+
+    &__contact{
+
+        &--icon{
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__social{
+        @include flexbox(center);
+
+        &--icon{
+
+            &:not(:last-child){
+                margin-right: 1.5rem;
+            }
+        }
+    }
+
+    &__right{
+        @include flexbox(flex-start);
+        padding: 5rem 0;
+        padding-left: 15rem;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    &__form{
+        width: 100%;
+    }
+
+  
+}
