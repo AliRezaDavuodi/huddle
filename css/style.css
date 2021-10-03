@@ -21,15 +21,20 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #00252e;
+  text-align: center;
 }
 .heading-1 {
   font-size: 4rem;
+}
+.heading-2 {
+  font-size: 6rem;
 }
 
 .paragraph {
   font-family: "Open Sans", sans-serif;
   font-size: 1.7rem;
   color: #00252e;
+  text-align: center;
 }
 .paragraph-4 {
   font-weight: 400;
@@ -67,7 +72,7 @@ body {
   transform: translateY(-0.2rem);
 }
 .btn__box .btn__primary:hover::after {
-  transform: scale(1.5);
+  transform: scale(1.5, 2);
   opacity: 0;
 }
 .btn__box .btn__sec:hover {
@@ -127,6 +132,38 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.statistics__photo--box {
+  width: 55%;
+  margin: 0 auto;
+}
+.statistics__photo {
+  width: 100%;
+  object-fit: fill;
+}
+.statistics__report {
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+.statistics__report--left {
+  padding: 5rem;
+  margin-right: auto;
+  position: relative;
+}
+.statistics__report--right {
+  padding: 5rem;
+  position: relative;
+}
+.statistics__report--icon {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

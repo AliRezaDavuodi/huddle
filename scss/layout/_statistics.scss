@@ -1,0 +1,39 @@
+.statistics{
+
+    &__photo--box{
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    &__photo{
+        width: 100%;
+        object-fit: fill;
+    }
+
+    &__report{
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+        &--left{
+            padding: 5rem;
+            margin-right: auto;
+            position: relative;
+        }
+
+        &--right{
+            padding: 5rem;
+            position: relative;
+        }
+
+        &--icon{
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+
+        }
+    }
+}

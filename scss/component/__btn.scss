@@ -23,7 +23,7 @@
         }
 
         &__primary:hover::after {
-            transform: scale(1.5);
+            transform: scale(1.5, 2);
             opacity: 0;
             
         }
