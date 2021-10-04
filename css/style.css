@@ -214,10 +214,19 @@ body {
   position: relative;
 }
 .footer__bg {
-  transform: rotate(180deg);
   position: absolute;
-  top: -1rem;
+  transform: rotate(180deg);
+  width: 100%;
+  height: 15rem;
+  top: 0;
   left: 0;
+  background-color: #fff;
+  -webkit-mask-image: url(../images/bg-footer-top-desktop.svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-image: url(../images/bg-footer-top-desktop.svg);
 }
 .footer__left {
   display: flex;
@@ -238,8 +247,14 @@ body {
   display: flex;
   align-items: center;
 }
-.footer__social--icon:not(:last-child) {
-  margin-right: 1.5rem;
+.footer__social svg {
+  cursor: pointer;
+}
+.footer__social svg path {
+  transition: all 0.3s;
+}
+.footer__social svg:hover path {
+  fill: red !important;
 }
 .footer__right {
   display: flex;

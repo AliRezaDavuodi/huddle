@@ -7,10 +7,19 @@
     position: relative;
     
     &__bg{
-        transform: rotate(180deg);
         position: absolute;
-        top: -1rem;
+        transform: rotate(180deg);
+        width: 100%;
+        height: 15rem;
+        top: 0;
         left: 0;
+        background-color: #fff;
+        -webkit-mask-image: url(../images/bg-footer-top-desktop.svg);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size:cover;
+        mask-size:cover;
+        mask-repeat: no-repeat;
+        mask-image: url(../images/bg-footer-top-desktop.svg);
     }
 
     &__left{
@@ -39,10 +48,15 @@
     &__social{
         @include flexbox(center);
 
-        &--icon{
+        svg{
+            cursor: pointer;
 
-            &:not(:last-child){
-                margin-right: 1.5rem;
+            path{
+                transition: all .3s;
+            }
+            
+            &:hover path{
+                fill: red !important;
             }
         }
     }
@@ -61,5 +75,4 @@
         width: 100%;
     }
 
-  
 }
