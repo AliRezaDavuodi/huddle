@@ -4,13 +4,13 @@
   "description": "![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "sass":"sass scss/main.scss:css/style.css -w",
+    "sass":"node-sass scss/main.scss:css/style.css -w",
     "live":"live-server --browser=firefox",
     "start": "npm-run-all --parallel sass live",
 
-    "compile":"node-sass scss/main.scss css/style.comp.css",
-    "compress":"node-sass css/style.comp.css css/style.css --output-style compressed",
-    "build":"compile compress"
+    "compile": "node-sass scss/main.scss css/style.comp.css",
+    "compress": "node-sass css/style.comp.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile compress"
   },
   "author": "Alireza Davoudi",
   "license": "ISC",
