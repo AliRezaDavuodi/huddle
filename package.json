@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass":"sass scss/main.scss:css/style.css -w",
-    "live":"live-server",
+    "live":"live-server --browser=firefox",
     "start": "npm-run-all --parallel sass live",
 
     "compile":"node-sass scss/main.scss css/style.comp.css",
