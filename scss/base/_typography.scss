@@ -3,7 +3,9 @@
     font-weight: 700;
     color: $Very-Dark-Cyan;
     text-align: center;
-
+    @include respond(bp-medium){
+        padding: 1rem;
+    }
 
 
     &-1{
@@ -16,6 +18,8 @@
 
     &-3{
         font-size: 3rem;
+
+        
     }
 
     &-4{
@@ -30,6 +34,7 @@
     font-size: 1.7rem;
     color: $Very-Dark-Cyan;
     text-align: center;
+    
 
     &-light{
         color: #fff;

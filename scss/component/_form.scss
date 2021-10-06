@@ -1,25 +1,24 @@
-.form{
+.form {
 
-    &__group{
+    &__group {
         position: relative;
     }
 
-    &__input{
+    &__input {
         font-family: inherit;
         font-size: 1.4rem;
         border: 0;
-        outline: 0;
         border-radius: 5px;
         width: 50%;
         padding: 1rem;
         padding-right: 3rem;
 
-        &:focus{
+        &:focus {
             outline: 0;
         }
     }
 
-    &__label{
+    &__label {
         position: absolute;
         bottom: -3rem;
         left: 0rem;
@@ -30,17 +29,16 @@
         color: $color-white;
     }
 
-    &__input:placeholder-shown + .form__label{
+    &__input:placeholder-shown+.form__label {
         bottom: .9rem;
         left: 1rem;
         color: $color-dark;
-        font-size:1.4rem;
+        font-size: 1.4rem;
         font-weight: 700;
     }
 
-    &__btn{
+    &__btn {
         border: 0;
-        outline: 0;
         border-radius: 5px;
         padding: 1rem 3rem;
         transition: all .3s ease;
@@ -50,20 +48,22 @@
         color: $color-white;
         box-shadow: 0 1rem 3rem rgba($Pink, .2);
 
-        &:hover{
-        box-shadow: 0 1rem 5rem rgba($Pink, .4);
-        background-color: darken($Pink, 10%);
-        transform: translateY(-.5rem);
+
+
+        &:hover {
+            box-shadow: 0 1rem 5rem rgba($Pink, .4);
+            background-color: darken($Pink, 10%);
+            transform: translateY(-.5rem);
         }
 
-        &:active{
+        &:active {
             box-shadow: 0 1rem 4rem rgba($Pink, .2);
-        background-color: darken($Pink, 15%);
-        transform: translateY(-.2rem);
+            background-color: darken($Pink, 15%);
+            transform: translateY(-.2rem);
         }
 
 
-        &:focus{
+        &:focus {
             outline: 0;
         }
     }

@@ -10,6 +10,16 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 31.25%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -22,6 +32,11 @@ body {
   font-weight: 700;
   color: #00252e;
   text-align: center;
+}
+@media only screen and (max-width: 50em) {
+  .heading {
+    padding: 1rem;
+  }
 }
 .heading-1 {
   font-size: 4rem;
@@ -85,6 +100,11 @@ body {
 
 .tl {
   text-align: left;
+}
+@media only screen and (max-width: 37.5em) {
+  .tl {
+    text-align: center;
+  }
 }
 
 .tr {
@@ -159,7 +179,6 @@ body {
   font-family: inherit;
   font-size: 1.4rem;
   border: 0;
-  outline: 0;
   border-radius: 5px;
   width: 50%;
   padding: 1rem;
@@ -187,7 +206,6 @@ body {
 }
 .form__btn {
   border: 0;
-  outline: 0;
   border-radius: 5px;
   padding: 1rem 3rem;
   transition: all 0.3s ease;
@@ -220,6 +238,12 @@ body {
   padding: 5rem 10rem;
   position: relative;
 }
+@media only screen and (max-width: 37.5em) {
+  .featurs__box {
+    flex-direction: column;
+    padding: 8rem;
+  }
+}
 .featurs__box:not(:last-child) {
   height: 60rem;
 }
@@ -233,16 +257,16 @@ body {
   position: absolute;
   transform: rotate(180deg);
   width: 100%;
-  height: 15rem;
-  top: 0;
+  height: 28vh;
+  top: -0.3rem;
   left: 0;
   background-color: #fff;
   -webkit-mask-image: url(../../images/bg-section-top-desktop-1.svg);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
-  -webkit-mask-position: top left;
+  -webkit-mask-position: center bottom;
   mask-size: 100%;
-  mask-position: top right;
+  mask-position: center bottom;
   mask-repeat: no-repeat;
   mask-image: url(../../images/bg-section-top-desktop-1.svg);
 }
@@ -250,32 +274,33 @@ body {
   position: absolute;
   transform: rotate(180deg);
   width: 100%;
-  height: 15rem;
-  bottom: -4rem;
+  height: 28vh;
+  bottom: -0.3rem;
   left: 0;
   background-color: #fff;
   -webkit-mask-image: url(../../images/bg-section-bottom-desktop-1.svg);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
-  -webkit-mask-position: bottom right;
+  -webkit-mask-position: center top;
   mask-size: 100%;
-  mask-position: bottom right;
+  mask-position: center top;
+  mask-repeat: no-repeat;
   mask-image: url(../../images/bg-section-bottom-desktop-1.svg);
 }
 .featurs .bg-top-2 {
   position: absolute;
   transform: rotate(180deg);
   width: 100%;
-  height: 13rem;
-  top: 0;
+  height: 28vh;
+  top: -0.3rem;
   left: 0;
   background-color: #fff;
   -webkit-mask-image: url(../../images/bg-section-top-desktop-2.svg);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
-  -webkit-mask-position: top left;
+  -webkit-mask-position: center bottom;
   mask-size: 100%;
-  mask-position: top right;
+  mask-position: center bottom;
   mask-repeat: no-repeat;
   mask-image: url(../../images/bg-section-top-desktop-2.svg);
 }
@@ -283,16 +308,17 @@ body {
   position: absolute;
   transform: rotate(180deg);
   width: 100%;
-  height: 15rem;
-  bottom: -4rem;
+  height: 30vh;
+  bottom: -0.3rem;
   left: 0;
   background-color: #fff;
   -webkit-mask-image: url(../../images/bg-section-bottom-desktop-2.svg);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
-  -webkit-mask-position: bottom right;
+  -webkit-mask-position: center top;
   mask-size: 100%;
-  mask-position: bottom right;
+  mask-position: center top;
+  mask-repeat: no-repeat;
   mask-image: url(../../images/bg-section-bottom-desktop-2.svg);
 }
 .featurs__text {
@@ -302,8 +328,20 @@ body {
   width: 50%;
   padding: 10rem;
 }
+@media only screen and (max-width: 50em) {
+  .featurs__photo--box {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .featurs__photo--box {
+    width: 25rem;
+    order: -1;
+  }
+}
 .featurs__photo {
   width: 100%;
+  height: 100%;
   object-fit: fill;
 }
 
@@ -312,24 +350,31 @@ body {
   align-items: center;
   color: #fff;
   background-color: #00252e;
-  height: 90vh;
-  overflow: hidden;
+  min-height: 80vh;
   position: relative;
+}
+@media only screen and (max-width: 50em) {
+  .footer {
+    flex-direction: column;
+    padding-top: 10vh;
+  }
 }
 .footer__bg {
   position: absolute;
   transform: rotate(180deg);
   width: 100%;
-  height: 14rem;
-  top: 0;
+  height: 30vh;
+  top: -0.5em;
   left: 0;
   background-color: #fff;
   -webkit-mask-image: url(../images/bg-footer-top-desktop.svg);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
+  -webkit-mask-position: center bottom;
   mask-size: 100%;
   mask-repeat: no-repeat;
   mask-image: url(../images/bg-footer-top-desktop.svg);
+  mask-position: center bottom;
 }
 .footer__left {
   display: flex;
@@ -338,6 +383,11 @@ body {
   width: 50%;
   flex-direction: column;
   justify-content: center;
+}
+@media only screen and (max-width: 50em) {
+  .footer__left {
+    width: 100%;
+  }
 }
 .footer__logo svg {
   transform: scale(0.7);
@@ -352,6 +402,16 @@ body {
 }
 .footer__social svg {
   cursor: pointer;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__social svg {
+    transform: scale(0.5);
+  }
+}
+@media only screen and (max-width: 50em) {
+  .footer__social svg {
+    transform: scale(0.8);
+  }
 }
 .footer__social svg path {
   transition: all 0.3s;
@@ -368,12 +428,18 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (max-width: 50em) {
+  .footer__right {
+    order: -1;
+    width: 100%;
+  }
+}
 .footer__form {
   width: 100%;
 }
 
 .header {
-  height: 95vh;
+  min-height: 50vh;
   text-align: center;
 }
 .header__top {
@@ -407,16 +473,26 @@ body {
   object-fit: fill;
 }
 .statistics__report {
-  width: 55%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
+  width: 55%;
+  margin: 0 auto;
   margin-top: 5rem;
+}
+@media only screen and (max-width: 50em) {
+  .statistics__report {
+    flex-direction: column;
+  }
 }
 .statistics__report--left {
   padding: 5rem;
   margin-right: auto;
   position: relative;
+}
+@media only screen and (max-width: 50em) {
+  .statistics__report--left {
+    margin-right: 0;
+  }
 }
 .statistics__report--right {
   padding: 5rem;

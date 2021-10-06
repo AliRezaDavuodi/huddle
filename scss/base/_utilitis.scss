@@ -22,6 +22,10 @@
 
 .tl{
     text-align: left;
+
+    @include respond(bp-small) {
+        text-align: center;
+    }
 }
 
 .tr{

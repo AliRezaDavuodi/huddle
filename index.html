@@ -12,6 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
     rel="stylesheet">
 
+   <!-- wow cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+
+   <!-- animated cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <!-- favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -24,7 +30,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header wow animate__fadeInDown" data-wow-duration="2s">
 
     <div class="header__top">
 
@@ -55,18 +61,22 @@
   </header>
 
   <section class="statistics">
-    <div class="statistics__photo--box">
+    <div class="statistics__photo--box wow animate__fadeInBottomLeft" data-wow-duration="2s"
+    data-wow-offset="70">
       <img class="statistics__photo" src="images/screen-mockups.svg" alt="screen mockups picture">
     </div>
+
     <div class="statistics__report">
 
-      <div class="statistics__report--left">
+      <div class="statistics__report--left wow animate__fadeInLeft" data-wow-duration="2s"
+      data-wow-offset="70">
         <h2 class="heading heading-2">1.4k+</h2>
         <p class="paragraph">Communities Formed</p>
         <img class="statistics__report--icon" src="images/icon-communities.svg" alt="pink message icon">
       </div>
 
-      <div class="statistics__report--right">
+      <div class="statistics__report--right wow animate__fadeInRight" data-wow-duration="2s"
+      data-wow-offset="70">
         <h2 class="heading heading-2">2.7m+</h2>
         <p class="paragraph">Messages Sent</p>
         <img class="statistics__report--icon" src="images/icon-messages.svg" alt="pink message icon">
@@ -77,29 +87,33 @@
 
   <section class="featurs">
 
-    <div class="featurs__box">
+    <div class="featurs__box ">
       <div class="bg-top-1">&nbsp;</div>
       <div class="bg-bottom-1">&nbsp;</div>
 
-      <div class="featurs__text">
+      <div class="featurs__text wow animate__slideInLeft" data-wow-duration="2s"
+      data-wow-offset="70">
         <h3 class="heading heading-3 tl">Grow Together</h3>
         <p class="paragraph tl">Generate meaningful discussions with your audience and build a <br> strong, loyal
           community.
           Think of the insightful conversations you <br> miss out on with a feedback form. </p>
       </div>
-      <div class="featurs__photo--box">
+      <div class="featurs__photo--box wow animate__slideInRight" data-wow-duration="2s"
+      data-wow-offset="70">
         <img src="images/illustration-grow-together.svg" alt="a girl an a man" class="featurs__photo">
       </div>
     </div>
 
     <div class="featurs__box">
 
-      <div class="featurs__photo--box">
+      <div class="featurs__photo--box wow animate__slideInRight" data-wow-duration="2s"
+      data-wow-offset="70">
         <img src="images/illustration-flowing-conversation.svg" alt="there is some people that they are talking"
           class="featurs__photo">
       </div>
 
-      <div class="featurs__text">
+      <div class="featurs__text wow animate__slideInLeft" data-wow-duration="2s"
+      data-wow-offset="70">
         <h3 class="heading heading-3 tl">flowing conversation</h3>
         <p class="paragraph tl">
           we wouldn't paginate a conversation in real life, so why do it onlline? <br>
@@ -113,7 +127,8 @@
       <div class="bg-top-2">&nbsp;</div>
       <div class="bg-bottom-2">&nbsp;</div>
 
-      <div class="featurs__text">
+      <div class="featurs__text wow animate__slideInLeft" data-wow-duration="2s"
+      data-wow-offset="70">
         <h3 class="heading heading-3 tl">your users</h3>
         <p class="paragraph tl">
           it takes no time at all to integrate huddle with your app's <br>
@@ -121,13 +136,15 @@
           users can start chatting immediately.
         </p>
       </div>
-      <div class="featurs__photo--box">
+      <div class="featurs__photo--box wow animate__slideInRight" data-wow-duration="2s"
+      data-wow-offset="70">
         <img src="images/illustration-your-users.svg" alt="there is some people that they are talking"
           class="featurs__photo">
       </div>
     </div>
 
-    <div class="featurs__box featurs__box--ver mt-3">
+    <div class="featurs__box featurs__box--ver mt-3 wow animate__slideInUp" data-wow-duration="2s"
+    data-wow-offset="70">
 
       <div class="featurs__text">
         <h3 class="heading heading-3 tc">ready to build your community ? </h3>
@@ -182,7 +199,7 @@
         <svg class="mr-2" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
-            fill="#fff" fill-rule="nonzero" />
+            fill="#fff" />
         </svg>
 
 
@@ -220,6 +237,10 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

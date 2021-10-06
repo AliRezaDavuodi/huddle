@@ -9,6 +9,18 @@
 html{
     font-size: 62.5%; // 1rem => 10px;
     box-sizing: border-box;
+
+
+@include respond(bp-large)
+{
+    font-size: 50%; // 8px
+}
+@include respond(bp-small)
+{
+    font-size: 31.25%;
+}
+
+
 }
 
 

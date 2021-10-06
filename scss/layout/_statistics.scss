@@ -1,39 +1,51 @@
-.statistics{
+.statistics {
 
-    &__photo--box{
+    &__photo--box {
         width: 55%;
         margin: 0 auto;
     }
 
-    &__photo{
+    &__photo {
         width: 100%;
         object-fit: fill;
     }
 
-    &__report{
+    &__report {
+        @include flexbox(center);
         width: 55%;
         margin: 0 auto;
-        display: flex;
-        align-items: center;
         margin-top: 5rem;
-        &--left{
+
+        @include respond(bp-medium) {
+            flex-direction: column;
+        }
+
+
+        &--left {
             padding: 5rem;
             margin-right: auto;
             position: relative;
+
+            @include respond(bp-medium) {
+                margin-right: 0;
+
+            }
+
         }
 
-        &--right{
-            padding: 5rem;
-            position: relative;
-        }
+            &--right {
+                padding: 5rem;
+                position: relative;
 
-        &--icon{
-            width: 4rem;
-            height: 4rem;
-            position: absolute;
-            top: 2rem;
-            left: 2rem;
+            }
 
+            &--icon {
+                width: 4rem;
+                height: 4rem;
+                position: absolute;
+                top: 2rem;
+                left: 2rem;
+
+            }
         }
     }
-}

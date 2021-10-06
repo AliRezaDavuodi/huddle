@@ -6,11 +6,15 @@
         padding: 5rem 10rem;
         position: relative;
 
-
-        &:not(:last-child){
-            height: 60rem;
+        @include respond(bp-small) {
+            flex-direction: column;
+            padding: 8rem;
         }
 
+
+        &:not(:last-child) {
+            height: 60rem;
+        }
 
         &:nth-child(2n+1) {
             background-color: $Very-Pale-Blue;
@@ -25,70 +29,78 @@
         position: absolute;
         transform: rotate(180deg);
         width: 100%;
-        height: 15rem;
-        top: 0;
+        height: 28vh;
+        top: -0.3rem;
         left: 0;
         background-color: #fff;
         -webkit-mask-image: url(../../images/bg-section-top-desktop-1.svg);
         -webkit-mask-repeat: no-repeat;
         -webkit-mask-size: 100%;
-        -webkit-mask-position: top left;
+        -webkit-mask-position: center bottom;
         mask-size: 100%;
-        mask-position: top right;
+        mask-position: center bottom;
         mask-repeat: no-repeat;
         mask-image: url(../../images/bg-section-top-desktop-1.svg);
+
     }
 
     .bg-bottom-1 {
         position: absolute;
         transform: rotate(180deg);
         width: 100%;
-        height: 15rem;
-        bottom: -4rem;
+        height: 28vh;
+        bottom: -.3rem;
         left: 0;
         background-color: #fff;
         -webkit-mask-image: url(../../images/bg-section-bottom-desktop-1.svg);
         -webkit-mask-repeat: no-repeat;
         -webkit-mask-size: 100%;
-        -webkit-mask-position: bottom right;
+        -webkit-mask-position: center top;
         mask-size: 100%;
-        mask-position: bottom right;
+        mask-position: center top;
+        mask-repeat: no-repeat;
         mask-image: url(../../images/bg-section-bottom-desktop-1.svg);
+
     }
 
     .bg-top-2 {
         position: absolute;
         transform: rotate(180deg);
         width: 100%;
-        height: 13rem;
-        top: 0;
+        height: 28vh;
+        top: -0.3rem;
         left: 0;
         background-color: #fff;
         -webkit-mask-image: url(../../images/bg-section-top-desktop-2.svg);
         -webkit-mask-repeat: no-repeat;
         -webkit-mask-size: 100%;
-        -webkit-mask-position: top left;
+        -webkit-mask-position: center bottom;
         mask-size: 100%;
-        mask-position: top right;
+        mask-position: center bottom;
         mask-repeat: no-repeat;
         mask-image: url(../../images/bg-section-top-desktop-2.svg);
+
+
     }
 
     .bg-bottom-2 {
         position: absolute;
         transform: rotate(180deg);
         width: 100%;
-        height: 15rem;
-        bottom: -4rem;
+        height: 30vh;
+        bottom: -.3rem;
         left: 0;
         background-color: #fff;
         -webkit-mask-image: url(../../images/bg-section-bottom-desktop-2.svg);
         -webkit-mask-repeat: no-repeat;
         -webkit-mask-size: 100%;
-        -webkit-mask-position: bottom right;
+        -webkit-mask-position: center top;
         mask-size: 100%;
-        mask-position: bottom right;
+        mask-position: center top;
+        mask-repeat: no-repeat;
         mask-image: url(../../images/bg-section-bottom-desktop-2.svg);
+
+
     }
 
     &__text {
@@ -98,10 +110,19 @@
     &__photo--box {
         width: 50%;
         padding: 10rem;
+        
+        @include respond(bp-medium){
+            padding: 1rem;
+        }
+        @include respond(bp-small){
+            width: 25rem;
+            order: -1;
+        }
     }
 
     &__photo {
         width: 100%;
+        height: 100%;
         object-fit: fill;
     }
 
